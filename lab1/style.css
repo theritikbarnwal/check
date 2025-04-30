@@ -1,0 +1,82 @@
+body
+{
+    background-color: rgb(201, 135, 122);
+    font-family: monospace;
+    font-size: 20px;
+}
+
+form
+{
+    background-color: rgba(250, 235, 215, 0.74);
+    width: 280px;
+    padding: 40px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-left: 610px;
+}
+
+form:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img
+{
+    width: 200px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 24px;
+    font-style: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+input, select
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: rgb(120, 120, 199);
+}
+
+.btn
+{
+    background-color: #98af4cb5;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover
+{
+    background-color: #7a8f3c;
+}   

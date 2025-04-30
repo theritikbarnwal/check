@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    th, td, table {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    </style>
+</head>
+<body>
+  <table id="tableid">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Year</th>
+      <th>Price</th>
+    </tr>
+  </table>
+  <script>
+    fetch("books.xml")  
+      .then(res => res.text())
+      .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+      .then(data => {
+        const books = data.getElementsByTagName("BOOK");  
+        const table = document.getElementById("tableid");
+        for (let book of books) {
+          const title = book.getElementsByTagName("TITLE")[0].textContent;
+          const author = book.getElementsByTagName("AUTHOR")[0].textContent;
+          const year = book.getElementsByTagName("YEAR")[0].textContent;
+          const price = book.getElementsByTagName("PRICE")[0].textContent;
+          const row = `<tr><td>${title}</td><td>${author}</td><td>${year}</td><td>${price}</td></tr>`;
+          table.innerHTML += row;
+        }
+      })
+      .catch(e => alert("Error loading XML: " + e));
+  </script>
+</body>
+</html>

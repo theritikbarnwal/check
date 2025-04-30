@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navigator Info</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Navigator Properties</h3>
+  <table border="1">
+  <tr>
+    <th>Sl.No</th>
+    <th>Property</th>
+    <th>Value</th>
+  </tr>
+  <script>
+    let props = ["appCodeName", "appName", "appVersion", "cookieEnabled", "language", "userAgent", "platform", "onLine"];
+    props.forEach((p, i) => {
+    document.write(`
+    <tr>
+      <td>${i+1}</td>
+      <td>${p}</td>
+      <td>${navigator[p]}</td>
+    </tr>`);
+    });
+  </script>
+  </table>
+</body>
+</html>

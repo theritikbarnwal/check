@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LIBRARY>
+  <BOOK>
+    <TITLE>WEB</TITLE>
+    <AUTHOR>ROBERT</AUTHOR>
+    <YEAR>2023</YEAR>
+    <PRICE>29.99</PRICE>
+  </BOOK>
+  <BOOK>
+    <TITLE>PYTHON</TITLE>
+    <AUTHOR>LINDA</AUTHOR>
+    <YEAR>2022</YEAR>
+    <PRICE>39.99</PRICE>
+  </BOOK>
+</LIBRARY>

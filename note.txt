@@ -1,0 +1,16 @@
+001. Design a well formatted registration form for a UG program in CMRU.
+002. Design a well formatted login page to validate user id and password.
+003. Design a User Dashboard containing Menus and other required elements using document CSS.
+004. Design a well formatted feedback page using external CSS.
+005. Design a web page for creating an EMI calculator.
+006. Design a web page with text fields and validate the textboxes for empty field validation and pattern matching.
+007. Design a web page to demonstrate event propagation.
+8. Design a web page to show navigator properties in tabular format.
+9. Design a web page to display XML information in formatted table,
+10. Create a web page to save students information in a MySQL database
+11. Create a web page to search and show the student's details in the page.
+12. Create a web page to update employee information in the MySQL database.
+13. Create a web page to search and delete employee information from the database.  
+
+
+

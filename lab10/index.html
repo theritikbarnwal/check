@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <style>
+        .container 
+        { 
+            width: 400px; 
+            margin: 30px auto; 
+            padding: 20px; 
+            background: rgb(151, 151, 114); 
+            border-radius: 20px;
+            color: rgb(205, 27, 27); 
+            border: 2px solid black; 
+        }
+        input 
+        { 
+            width: 100%;
+            margin: 5px 0; 
+            padding: 6px;
+            color: rgb(255, 0, 166);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="save_std_info.php" method="post">
+        <div class="container">
+            <h2 align="center">Student Info</h2>
+            <input type="text" name="student_id" placeholder="Student ID" required>
+            <input type="text" name="student_name" placeholder="Name" required>
+            <input type="text" name="mobile_no" placeholder="Mobile No" required>
+            <input type="text" name="course" placeholder="Course" required>
+            <input type="text" name="university" placeholder="University" required>
+            <input type="submit" value="Save">
+        </div>
+    </form>
+</body>
+</html>

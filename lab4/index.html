@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prg4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="h1">Contact Us</h1>
+        <p class="p1">We would love to hear from you!</p>
+        <p class="p2">Please fill out the form below.</p>
+    <form class="main">
+        <label class="name">NAME</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <label class="email">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label class="phone">PHONE</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+        <label class="message">Message</label>
+        <textarea name="message" id="message" cols="20" rows="5" placeholder="Enter your message" required></textarea>
+    <div class="rating">
+        <label class="rating">Rating</label>
+        <input type="radio" name="rating" id="rating1" value="1" required> 1
+        <input type="radio" name="rating" id="rating2" value="2"> 2
+        <input type="radio" name="rating" id="rating3" value="3"> 3
+        <input type="radio" name="rating" id="rating4" value="4"> 4
+        <input type="radio" name="rating" id="rating5" value="5"> 5
+        <br><br>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Submit" id="submit"> 
+    </div>
+    </form>
+</body>
+</html>

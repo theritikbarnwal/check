@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capture vs Bubble</title>
+  <style>
+    * { font-family: Arial, sans-serif; background-color: #000000;}
+    .box {
+      padding: 20px;
+      border: 2px solid rgb(255, 255, 255);
+      margin: 10px;
+      
+    }
+    #outer { background: rgb(109, 97, 218); width: 300px;}
+    #inner { background: rgb(238, 144, 169); }
+  </style>
+</head>
+<body>
+
+<div id="outer" class="box">
+  Outer
+  <div id="inner" class="box">Inner (Click Me)</div>
+</div>
+
+<script>
+  // Capturing (true) - Outer -> Inner
+  document.getElementById("outer").addEventListener("click", () => {
+    console.log("Capturing: Outer");
+  }, true);
+
+  // Capturing (true) - Inner -> Outer
+  document.getElementById("inner").addEventListener("click", () => {
+    console.log("Capturing: Inner");
+  }, true);
+
+  // Bubbling (default) - Inner -> Outer
+  document.getElementById("inner").addEventListener("click", () => {
+    console.log("Bubbling: Inner");
+  });
+
+  // Bubbling (default) - Outer -> Inner
+  document.getElementById("outer").addEventListener("click", () => {
+    console.log("Bubbling: Outer");
+  });
+</script>
+
+</body>
+</html>
